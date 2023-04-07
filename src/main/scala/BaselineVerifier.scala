@@ -189,7 +189,7 @@ class BaselineVerifier(seaPath: String, z3Path: String) {
     )))
     bw.close()
 
-    val seaOutput = Process(s"$seaPath smt -O0 $cFilepath -o $smtFilepath --oll=$llFilepath").!!(ProcessLogger(_ => ()))
+    val seaOutput = Process(s"$seaPath -m64 smt --solve -O0 $cFilepath -o $smtFilepath --oll=$llFilepath").!!(ProcessLogger(_ => ()))
     val result = seaOutput.linesIterator.toList.last
     if (result == "unsat") {
       None
