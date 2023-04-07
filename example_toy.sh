@@ -3,7 +3,7 @@
 dir="./examples/toy"
 old_file=$dir/"old.c"
 new_file=$dir/"new.c"
-func_name="lib"
+func_name="f"
 z3_path="z3"
 seahorn_path="/home/aliraeis/Projekte/spl-tools/seahorn_docker_run.sh"
 typechef_bb_path="/home/aliraeis/Projekte/TypeChef-BusyboxAnalysis"
@@ -11,7 +11,7 @@ typechef_bb_path="/home/aliraeis/Projekte/TypeChef-BusyboxAnalysis"
 module="EquivalenceChecker"
 
 
-timeout_time="2m"
+timeout_time="40s"
 
 echo "Running module: "$module
 echo ""
