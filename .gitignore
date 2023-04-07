@@ -9,7 +9,7 @@ old.pi*
 
 0.c
 0.pi*
-1.c
+# 1.c
 new.c
 old.c
 
