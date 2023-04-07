@@ -84,7 +84,7 @@ object EquivalenceChecker {
 //    })), cFilepath)
 //    Process(
 //      s"/usr/bin/clang-14 -c -emit-llvm -D__SEAHORN__ -fdeclspec -O1 -Xclang -disable-llvm-optzns -fgnu89-inline " +
-//        s"-m64 -I/mnt/c/Users/shuolin/CLionProjects/seahorn/build/run/include -g -o $bcFilepath $cFilepath"
+//        s"-I/mnt/c/Users/shuolin/CLionProjects/seahorn/build/run/include -g -o $bcFilepath $cFilepath"
 //    ).!!
 //    Process(
 //      s"/mnt/c/Users/shuolin/CLionProjects/seahorn/build/run/bin/seapp -o $ppBcFilepath " +
