@@ -26,10 +26,10 @@ echo ""
 echo "Timing out after: "$timeout_time
 echo ""
 echo "************************************"
-cmd="timeout $timeout_time sbt \"runMain $module $old_file $new_file $func_name $z3_path $seahorn_path $typechef_bb_path\""
+cmd="timeout $timeout_time sbt \"runMain $module $old_file $new_file $func_name $seahorn_path $z3_path $typechef_bb_path\""
 echo $cmd
 # eval $cmd
-timeout $timeout_time sbt "runMain $module $old_file $new_file $func_name $z3_path $seahorn_path $typechef_bb_path"
+timeout $timeout_time sbt "runMain $module $old_file $new_file $func_name $seahorn_path  $z3_path $typechef_bb_path"
 
 
 # examples/toy/new.c
